@@ -10,7 +10,7 @@ $("document").ready(function() {
 	document.getElementById("jamiebooksread").innerHTML = "Jamie has read " + name1 + " books so far!" + "<br>";
 	var name = booksdata.getElementsByTagName('title');
 	var pagesRead = booksdata.getElementsByTagName('num_pages').length;
-	document.getElementById("jamiebooksread").innerHTML = "Jamie has read " + pagesRead + " pages so far!" + "<br>";
+	document.getElementById("jamiepagesread").innerHTML = "Jamie has read " + pagesRead + " pages so far!" + "<br>";
 	var name = booksdata.getElementsByTagName('title');
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
