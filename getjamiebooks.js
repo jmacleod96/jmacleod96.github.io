@@ -11,7 +11,7 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 	var pagesRead = booksdata.getElementsByTagName('num_pages').length;
 	document.getElementById("jamiepagesread").innerHTML = "Jamie has read " + pagesRead + " pages so far!" + "<br>";
-	var name = booksdata.getElementsByTagName('title');
+	var pages = booksdata.getElementsByTagName('num_pages');
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
     }
