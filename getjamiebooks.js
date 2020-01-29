@@ -9,6 +9,12 @@ $("document").ready(function() {
 	var name1 = booksdata.getElementsByTagName('title').length;
 	document.getElementById("jamiebooksread").innerHTML = "Jamie has read " + name1 + " books so far!" + "<br>";
 	var name = booksdata.getElementsByTagName('title');
+	
+	var pagesRead = booksdata.getElementsByTagName('num_pages').length;
+	document.getElementById("jamiebooksread").innerHTML = "<br>" + "Pages read so far:" + pagesread 
+	
+	
+	
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
     }
