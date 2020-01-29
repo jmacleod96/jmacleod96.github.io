@@ -12,7 +12,7 @@ $("document").ready(function() {
 	
 	
 	var pages = booksdata.getElementsByTagName('num_pages').length;
-	document.getElementById("jamiepagesread").innerHTML = "Jamie has read " + pages + " pages so far!" + "<br>";
+	document.getElementById("jamiebooksread").innerHTML = "Jamie has read " + pages + " pages so far!" + "<br>";
 	
 	
 	for (i = 0 ; i <name.length; i++) {
@@ -23,6 +23,8 @@ $("document").ready(function() {
 	},
 	error: function(data) {
 	console.log('Error loading XML data');
+	
+	
 	}
  })
 })
