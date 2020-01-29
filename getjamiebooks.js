@@ -10,9 +10,6 @@ $("document").ready(function() {
 	document.getElementById("jamiebooksread").innerHTML = "Jamie has read " + name1 + " books so far!" + "<br>";
 	var name = booksdata.getElementsByTagName('title');
 	
-	
-	
-	
 
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
