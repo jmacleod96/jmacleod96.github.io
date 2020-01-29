@@ -11,10 +11,9 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 	
 	
-	var pages = booksdata.getElementsByTagName('num_pages').length;
-	document.getElementById("jamiepagesread").innerHTML = "Jamie has read " + pages + " pages so far!" + "<br>";
 	
 	
+
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
     }
@@ -23,8 +22,6 @@ $("document").ready(function() {
 	},
 	error: function(data) {
 	console.log('Error loading XML data');
-	
-	
 	}
  })
 })
