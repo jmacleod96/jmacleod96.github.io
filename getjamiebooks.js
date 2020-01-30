@@ -21,6 +21,12 @@ $("document").ready(function() {
 	document.getElementById("jamiebookshere").innerHTML = txt;
 	console.log(booksdata);
 	},
+	for (i = 0 ; i <name.length; i++) {
+        txt += name[i].childNodes[0].nodeValue + "<br>";
+    }
+	document.getElementById("jamiebookshere").innerHTML = txt;
+	console.log(booksdata);
+	},
 	error: function(data) {
 	console.log('Error loading XML data');
 	}
