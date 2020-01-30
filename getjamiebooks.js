@@ -13,7 +13,7 @@ $("document").ready(function() {
 	//var pages1 = booksdata.getElementsByTagName('num_pages');
 	//document.getElementById("jamiepagesread").innerHTML = "Pages read so far:" + pages1 + "<br>"; 
 	
-	$(booksdata).find("review").each(function()
+	$(xml).find("review").each(function()
 {
    $(this).find("num_pages").each(function()
    {
