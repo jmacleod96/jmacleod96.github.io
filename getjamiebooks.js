@@ -13,10 +13,10 @@ $("document").ready(function() {
 	var pages1 = booksdata.getElementsByTagName('num_pages');
 	//document.getElementById("jamiepagesread").innerHTML = "Pages read so far:" + pages1 + "<br>"; 
 	
-	$(booksdata).find("num_pages").each(function()
+	$(booksdata).find("review").each(function()
 {
    var myTotal = 0;
-   $(this).find("price").each(function()
+   $(this).find("num_pages").each(function()
    {
      mytotal = mytotal  + Number($(this).text());     
 	 document.getElementById("jamiepagesread").innerHTML = "Pages read so far:" + mytotal + "<br>"; 
