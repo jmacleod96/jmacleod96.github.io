@@ -18,7 +18,7 @@ $("document").ready(function() {
    $(this).find("num_pages").each(function()
    {
    $("jamiepagesread").append(Number($(this).text()));
-   }
+   })
 
 })
 	
