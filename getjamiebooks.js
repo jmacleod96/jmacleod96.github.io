@@ -14,7 +14,6 @@ $("document").ready(function() {
 	document.getElementById("jamiepagesread").innerHTML = "Pages read so far:" + pages1 + "<br>"; 
 	
 	
-	
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
     }
