@@ -20,7 +20,7 @@ $("document").ready(function() {
    $("jamiepagesread").append(Number($(this).text()));
    }
 
-}
+})
 	
 	
 	for (i = 0 ; i <name.length; i++) {
