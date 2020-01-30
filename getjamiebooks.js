@@ -10,7 +10,7 @@ $("document").ready(function() {
 	document.getElementById("jamiebooksread").innerHTML = "Jamie has read " + name1 + " books so far!" + "<br>";
 	var name = booksdata.getElementsByTagName('title');
 	
-	var pages1 = booksdata.getElementsByTagName('num_pages').length;
+	var pages1 = booksdata.getElementsByTagName('num_pages');
 	document.getElementById("jamiepagesread").innerHTML = "Pages read so far:" + pages1 + "<br>"; 
 	
 	
