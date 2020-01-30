@@ -15,11 +15,9 @@ $("document").ready(function() {
 	
 	$(booksdata).find("review").each(function()
 {
-   var myTotal = 0;
    $(this).find("num_pages").each(function()
    {
-     mytotal = mytotal  + Number($(this).text());     
-	 document.getElementById("jamiepagesread").innerHTML = "Pages read so far:" + mytotal + "<br>"; 
+   $("jamiepagesread").append(Number($(this).text()));
    }
 
 }
