@@ -13,12 +13,12 @@ $("document").ready(function() {
 	var pages1 = booksdata.getElementsByTagName('num_pages');
 	//document.getElementById("jamiepagesread").innerHTML = "Pages read so far:" + pages1 + "<br>"; 
 	
-	$(booksdata).find("review").each(function()
-{
-   $(this).find("num_pages").each(function()
-   {
-   $("#jamiepagesread").append(Number($(this).text()));
-   })
+	var totalSum = 0;
+	$('num_pages').each(function () {
+    totalSum += parseFloat(this.value);
+	document.getElementById("jamiepagesread").innerHTML = totalSum;
+	
+});
 
 })
 	
