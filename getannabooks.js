@@ -7,7 +7,7 @@ $("document").ready(function() {
 	var txt = "";
 	var booksdata = data;
 	var name1 = booksdata.getElementsByTagName('title').length;
-	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>";
+	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br><br>" ;
 	
 	
 	
