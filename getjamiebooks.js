@@ -10,16 +10,6 @@ $("document").ready(function() {
 	document.getElementById("jamiebooksread").innerHTML = "Books read: " + name1 + "<br>";
 	var name = booksdata.getElementsByTagName('title');
 	
-	var pages1 = booksdata.getElementsByTagName('num_pages');
-	//document.getElementById("jamiepagesread").innerHTML = "Pages read so far:" + pages1 + "<br>"; 
-	
-	var totalSum = 0;
-	$('num_pages').each(function () {
-    totalSum += parseFloat(this.value);
-	document.getElementById("jamiepagesread").innerHTML = totalSum;
-	
-});
-
 
 	
 	
