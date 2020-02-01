@@ -10,6 +10,9 @@ $("document").ready(function() {
 	document.getElementById("jamiebooksread").innerHTML = "Books read: " + name1 + "<br>";
 	var name = booksdata.getElementsByTagName('title');
 	
+	var numpages = booksdata.getElementsByTagName('num_pages');
+	console.log(numpages)
+	
 
 	
 	
