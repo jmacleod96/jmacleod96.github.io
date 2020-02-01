@@ -11,8 +11,7 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 	
 	var numpages = booksdata.getElementsByTagName('num_pages');
-	console.log(numpages)
-	
+	document.getElementById("jamiepagesread").innerHTML = "Pages read: " + numpages + "<br>";
 
 	
 	
