@@ -1,7 +1,7 @@
 $("document").ready(function() {
 
  $.ajax({
-	url: 'https://www.goodreads.com/review/list/11465889.xml?key=s0JsLuTDaZxAxCCWKFzA&v=2&shelf=read&per_page=100&page=1',
+	url: 'https://www.goodreads.com/review/list/11465889.xml?key=s0JsLuTDaZxAxCCWKFzA&v=2&shelf=read&per_page=800&page=1',
 	dataType: 'xml',
 	success: function(data) {
 	var txt = "";
