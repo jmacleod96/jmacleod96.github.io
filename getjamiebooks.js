@@ -10,13 +10,14 @@ $("document").ready(function() {
 	document.getElementById("jamiebooksread").innerHTML = "Books read: " + name1 + "<br>";
 	var name = booksdata.getElementsByTagName('title');
 	
-	var numpages = booksdata.getElementsByTagName('num_pages');
-	document.getElementById("jamiepagesread").innerHTML = "Pages read: " + numpages + "<br>";
+	//var numpages = booksdata.getElementsByTagName('num_pages');
+	//document.getElementById("jamiepagesread").innerHTML = "Pages read: " + numpages + "<br>";
 	
-	var numpages = [];
-	[].push.apply(numpages, htmlCollection);
-
-	
+	var objectHTMLCollection = document.getElementsByTagName("num_pages"),
+    string = [].map.call( objectHTMLCollection, function(node){
+        return node.textContent || node.innerText || "";
+    }).join("");
+	console.log(objectHTMLCollection)
 	
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
