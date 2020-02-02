@@ -10,14 +10,8 @@ $("document").ready(function() {
 	document.getElementById("jamiebooksread").innerHTML = "Books read: " + name1 + "<br>";
 	var name = booksdata.getElementsByTagName('title');
 	
-	//var numpages = booksdata.getElementsByTagName('num_pages');
-	//document.getElementById("jamiepagesread").innerHTML = "Pages read: " + numpages + "<br>";
-	
-	var numpages = document.getElementsByClassName("num_pages");
-	for (var i = 0; i < numpages.length; i++) {
-    console.log(numpages[i].id); //second console output
-}
-
+	var numpages = booksdata.getElementsByTagName('num_pages');
+	document.getElementById("jamiepagesread").innerHTML = "Pages read: " + numpages + "<br>";
 	
 	
 	for (i = 0 ; i <name.length; i++) {
