@@ -9,14 +9,16 @@ $("document").ready(function() {
 	var name1 = booksdata.getElementsByTagName('title').length;
 	document.getElementById("jamiebooksread").innerHTML = "Books read: " + name1 + "<br>";
 	var name = booksdata.getElementsByTagName('title');
-	
-	var lol = jamiepagesread.innerHTML;
-	jamiepagesread.innerHTML=lol;
-	console.log(lol)
 
 	
-	var numpages = booksdata.getElementsByTagName('num_pages');
-	document.getElementById("jamiepagesread").innerHTML = "Pages read: " + numpages + "<br>";
+	$(this).find("num_pages").each(function()
+   {
+	 var mytotal = 0;
+     mytotal = mytotal  + Number($(this).text());     
+	 document.getElementById("annapagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
+   })
+
+})
 	
 	
 	for (i = 0 ; i <name.length; i++) {
