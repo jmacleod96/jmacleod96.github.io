@@ -11,12 +11,7 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 	
 	var numpages = booksdata.getElementsByTagName('num_pages');
-	//document.getElementById("jamiepagesread").innerHTML = "Pages read: " + numpages + "<br>";
-	
-	[].forEach.call(numpages, function(el) {
-    console.log(review.num_pages);
-});
-
+	document.getElementById("jamiepagesread").innerHTML = "Pages read: " + numpages + "<br>";
 
 	
 	
