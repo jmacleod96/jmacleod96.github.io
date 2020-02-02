@@ -9,7 +9,7 @@ $("document").ready(function() {
 	var name1 = booksdata.getElementsByTagName('title').length;
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 	
-	$(xml).find("rate").each(function()
+	$(xml).find("review").each(function()
 {
    var myTotal = 0;
    $(this).find("num_pages").each(function()
