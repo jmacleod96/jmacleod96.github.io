@@ -14,11 +14,11 @@ $("document").ready(function() {
 	
    $(this).find("num_pages").each(function()
    {
-	 var myTotal = 0;
+	 var mytotal = 0;
      mytotal = mytotal  + Number($(this).text());     
    })
 })
-	document.getElementById("annapagesread").innerHTML = "Pages read: " + myTotal + "<br>" ;
+	document.getElementById("annapagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
 	
 	var name = booksdata.getElementsByTagName('title');
 	for (i = 0 ; i <name.length; i++) {
