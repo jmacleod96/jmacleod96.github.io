@@ -13,8 +13,9 @@ $("document").ready(function() {
 {
 	
    $(this).find("num_pages").each(function()
+    var mytotal = 0;
    {
-	 var mytotal = 0;
+	 
      mytotal = mytotal  + Number($(this).text());     
    })
 })
