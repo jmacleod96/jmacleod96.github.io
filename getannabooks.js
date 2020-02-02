@@ -18,10 +18,8 @@ $("document").ready(function() {
 	 
      mytotal = mytotal  + Number($(this).text());     
    })
-   
-   document.getElementById("annapagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
 })
-	
+	document.getElementById("annapagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
 	
 	var name = booksdata.getElementsByTagName('title');
 	for (i = 0 ; i <name.length; i++) {
