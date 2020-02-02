@@ -11,7 +11,7 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 	
 	var lol = jamiepagesread.innerHTML;
-	div2.innerHTML=lol;
+	jamiepagesread.innerHTML=lol;
 	console.log(lol)
 
 	
