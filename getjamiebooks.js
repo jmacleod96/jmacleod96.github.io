@@ -14,7 +14,7 @@ $("document").ready(function() {
 	//document.getElementById("jamiepagesread").innerHTML = "Pages read: " + numpages + "<br>";
 	
 	[].forEach.call(numpages, function(el) {
-    console.log(el.id);
+    console.log(review.num_pages);
 });
 
 
