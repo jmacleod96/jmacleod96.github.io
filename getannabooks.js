@@ -16,7 +16,7 @@ $("document").ready(function() {
    {
      mytotal = mytotal  + Number($(this).text());     
 	 document.getElementById("annapagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
-   }
+   })
 
 })
 	
