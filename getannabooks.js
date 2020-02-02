@@ -11,9 +11,10 @@ $("document").ready(function() {
 	
 	$(booksdata).find("review").each(function()
 {
-	var mytotal = 0;
+	
    $(this).find("num_pages").each(function()
    {
+	 var mytotal = 0;
      mytotal = mytotal  + Number($(this).text());     
 	 document.getElementById("annapagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
    })
