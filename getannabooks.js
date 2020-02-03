@@ -14,7 +14,7 @@ $("document").ready(function() {
 {
   $(this).find("num_pages").each(function()
    {
-	  var current = parseInt($("#annapagesread"));
+	  var current = 0;
       current += parseInt($(this).text());
       $("#annapagesread").html(current);
    })
