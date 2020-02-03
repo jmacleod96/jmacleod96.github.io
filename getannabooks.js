@@ -12,9 +12,10 @@ $("document").ready(function() {
 	
 	$(booksdata).find("review").each(function()
 {
+	var current = 0;
   $(this).find("num_pages").each(function()
    {
-	  var current = 0;
+	  
       current += parseInt($(this).text());
       $("#annapagesread").html(current);
    })
