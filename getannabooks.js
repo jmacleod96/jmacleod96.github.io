@@ -9,17 +9,17 @@ $("document").ready(function() {
 	var name1 = booksdata.getElementsByTagName('title').length;
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 	
+	
 	$(booksdata).find("review").each(function()
 {
-	var mytotal = 0;
    $(this).find("num_pages").each(function()
-    
    {
-	 
-     mytotal = mytotal  + Number($(this).text());     
-   })
-})
-	document.getElementById("annapagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
+   $("#annapagesread").append(Number($(this).text()));
+   }
+
+}
+	
+	
 	
 	var name = booksdata.getElementsByTagName('title');
 	for (i = 0 ; i <name.length; i++) {

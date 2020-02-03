@@ -20,9 +20,9 @@ $("document").ready(function() {
      mytotal = myTotal  + Number($(this).text());     
 	 
    })
-
-})
 	document.getElementById("jamiepagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
+})
+	
 	
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
