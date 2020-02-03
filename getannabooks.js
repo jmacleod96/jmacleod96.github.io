@@ -12,11 +12,11 @@ $("document").ready(function() {
 	
 	$(booksdata).find("review").each(function()
 {
-	var mytotal = 0;
-   $(this).find("num_pages").each(function()
+  $(this).find("num_pages").each(function()
    {
-	   mytotal = mytotal  + Number($(this).text()); 
-	   $("#annapagesread").append(mytotal)
+	  var current = parseInt($("#annapagesread"));
+      current += parseInt($(this).text());
+      $("#annapagesread").html(current);
    })
 
 })
