@@ -11,16 +11,17 @@ $("document").ready(function() {
 	
 	
 
-    $(booksdata).find("review").each(function()
-    {
-       $(this).find("num_pages").each(function()
-       {
-		   var myTotal = 0;
-         mytotal = mytotal  + Number($(this).text());     
-       })
-
-    })
-  $("#annapagesread").append(myTotal);
+    var total =  0;
+            for(var i=0;i<num_pages.length;i++)
+              {                  
+                if(isNaN(input[i])){
+                continue;
+                 }
+                  total += Number(input[i]);
+               }
+             return total;
+			 document.getElementById("annapagesread").innerHTML = "Pages read: " + total + "<br>" ;
+            }
 	
 	
 	var name = booksdata.getElementsByTagName('title');
