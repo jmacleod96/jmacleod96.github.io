@@ -10,17 +10,16 @@ $("document").ready(function() {
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 	
 	
-	$(booksdata).find("review").each(function()
-{
-  $(this).find("num_pages").each(function()
-   {
-	  var current = 0;
-      current += parseInt($(this).text());
-      $("#annapagesread").html(current);
-   })
+var myTotal = 0;
+    $(xml).find("review").each(function()
+    {
+       $(this).find("num_pages").each(function()
+       {
+         mytotal = mytotal  + Number($(this).text());     
+       }
 
-})
-	
+    }
+  $("#annapagesread").append(myTotal);
 	
 	
 	var name = booksdata.getElementsByTagName('title');
