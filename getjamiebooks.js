@@ -22,6 +22,12 @@ $("document").ready(function() {
    //})
 	//document.getElementById("jamiepagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
 //})
+
+	function sum(input){
+             
+	if (toString.call(input) !== "[object Array]")
+    return false;
+	var numpages = booksdata.getElementsByTagName('num_pages');
 	var total =  0;
             for(var i=0;i<num_pages.length;i++)
               {                  
@@ -32,7 +38,7 @@ $("document").ready(function() {
                }
              return total;
 			 document.getElementById("jamiepagesread").innerHTML = "Pages read: " + total + "<br>" ;
-            
+	}
 	
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
