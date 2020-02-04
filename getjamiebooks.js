@@ -32,7 +32,7 @@ $("document").ready(function() {
                }
              return total;
 			 document.getElementById("jamiepagesread").innerHTML = "Pages read: " + total + "<br>" ;
-            }
+            
 	
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
