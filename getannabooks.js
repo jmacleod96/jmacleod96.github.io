@@ -16,9 +16,9 @@ var myTotal = 0;
        $(this).find("num_pages").each(function()
        {
          mytotal = mytotal  + Number($(this).text());     
-       }
+       })
 
-    }
+    })
   $("#annapagesread").append(myTotal);
 	
 	
