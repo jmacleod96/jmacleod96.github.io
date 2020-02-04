@@ -13,9 +13,9 @@ $("document").ready(function() {
 
     $(booksdata).find("review").each(function()
     {
-		var myTotal = 0;
        $(this).find("num_pages").each(function()
        {
+		   var myTotal = 0;
          mytotal = mytotal  + Number($(this).text());     
        })
 
