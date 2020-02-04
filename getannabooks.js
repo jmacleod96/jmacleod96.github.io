@@ -12,8 +12,9 @@ $("document").ready(function() {
 	var numpages = booksdata.getElementsByTagName('num_pages');
 	for (i = 0 ; i <numpages.length; i++) {
 	txt += numpages[i].childNodes[0].nodeValue + "<br>";
-	}
 	document.getElementById("annapageshere").innerHTML = txt;
+	}
+	
 	
 	//var name = booksdata.getElementsByTagName('title');
 	
