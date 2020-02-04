@@ -10,9 +10,10 @@ $("document").ready(function() {
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 	
 	
-var myTotal = 0;
+
     $(booksdata).find("review").each(function()
     {
+		var myTotal = 0;
        $(this).find("num_pages").each(function()
        {
          mytotal = mytotal  + Number($(this).text());     
