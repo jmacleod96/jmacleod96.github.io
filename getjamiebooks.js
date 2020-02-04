@@ -11,18 +11,28 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 
 	
-	$(booksdata).find("review").each(function()
-{
-	var myTotal = 0;
-   $(this).find("num_pages").each(function()
-   {
+	//$(booksdata).find("review").each(function()
+//{
+	//var myTotal = 0;
+   //$(this).find("num_pages").each(function()
+   //{
 	
-     mytotal = myTotal  + Number($(this).text());     
+     //mytotal = myTotal  + Number($(this).text());     
 	 
-   })
-	document.getElementById("jamiepagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
-})
-	
+   //})
+	//document.getElementById("jamiepagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
+//})
+	var total =  0;
+            for(var i=0;i<num_pages.length;i++)
+              {                  
+                if(isNaN(input[i])){
+                continue;
+                 }
+                  total += Number(input[i]);
+               }
+             return total;
+			 document.getElementById("jamiepagesread").innerHTML = "Pages read: " + total + "<br>" ;
+            }
 	
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
