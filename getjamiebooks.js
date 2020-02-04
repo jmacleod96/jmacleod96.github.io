@@ -29,7 +29,7 @@ $("document").ready(function() {
     return false;
 	var numpages = booksdata.getElementsByTagName('num_pages');
 	var total =  0;
-            for(var i=0;i<num_pages.length;i++)
+            for(var i=0;i<numpages.length;i++)
               {                  
                 if(isNaN(input[i])){
                 continue;

@@ -9,23 +9,10 @@ $("document").ready(function() {
 	var name1 = booksdata.getElementsByTagName('title').length;
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 	
-	function sum(input){
-             
-	if (toString.call(input) !== "[object Array]")
-    return false;
 	var numpages = booksdata.getElementsByTagName('num_pages');
-    var total =  0;
-            for(var i=0;i<numpages.length;i++)
-              {                  
-                if(isNaN(input[i])){
-                continue;
-                 }
-                  total += Number(input[i]);
-               }
-             return total;
-			 document.getElementById("annapagesread").innerHTML = "Pages read: " + total + "<br>" ;
+	for (i = 0 ; i <numpages.length; i++) {
+	txt += numpages[i].childNodes[0].nodeValue + "<br>";
 	}
-	
 	
 	//var name = booksdata.getElementsByTagName('title');
 	
