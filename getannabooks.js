@@ -21,7 +21,7 @@ $("document").ready(function() {
                }
              return total;
 			 document.getElementById("annapagesread").innerHTML = "Pages read: " + total + "<br>" ;
-            }
+            
 	
 	
 	//var name = booksdata.getElementsByTagName('title');
