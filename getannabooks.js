@@ -11,7 +11,7 @@ $("document").ready(function() {
 	
 	
 var myTotal = 0;
-    $(xml).find("review").each(function()
+    $(booksdata).find("review").each(function()
     {
        $(this).find("num_pages").each(function()
        {
