@@ -21,7 +21,8 @@ $("document").ready(function() {
       sum += numpages[index++]   // Add number on each iteration
 	);
 		return sum;
-		document.getElementById("jamiepagesread").innerHTML = sum;
+		var pagesread = sum;
+		document.getElementById("jamiepagesread").innerHTML = pagesread;
 }
 	
 	for (i = 0 ; i <name.length; i++) {
