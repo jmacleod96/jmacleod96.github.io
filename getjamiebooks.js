@@ -11,7 +11,7 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 
 	var numpages = booksdata.getElementsByTagName('num_pages');
-	for (var i = 0, sum = 0; i < numpages.length; sum += array[i++]);
+	for (var i = 0, sum = 0; i < numpages.length; sum += numpages[i++]);
 	document.getElementById("annapagesread").innerHTML = sum;
 	
 	
