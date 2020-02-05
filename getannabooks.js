@@ -16,7 +16,7 @@ $("document").ready(function() {
 	}
 	
 	
-	//var name = booksdata.getElementsByTagName('title');
+	var name = booksdata.getElementsByTagName('title');
 	
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
