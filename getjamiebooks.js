@@ -15,7 +15,7 @@ $("document").ready(function() {
 	var total=0;
 	for(var numpages in booksdata) 
 	{ 
-		total += booksdata[i]; 
+		total += booksdata[numpages]; 
 		console.log(total);
 	}
 	
