@@ -11,33 +11,12 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 
 	
-	//$(booksdata).find("review").each(function()
-//{
-	//var myTotal = 0;
-   //$(this).find("num_pages").each(function()
-   //{
-	
-     //mytotal = myTotal  + Number($(this).text());     
-	 
-   //})
-	//document.getElementById("jamiepagesread").innerHTML = "Pages read: " + mytotal + "<br>" ;
-//})
-
-	function sum(input){
-             
-	if (toString.call(input) !== "[object Array]")
-    return false;
 	var numpages = booksdata.getElementsByTagName('num_pages');
-	var total =  0;
-            for(var i=0;i<numpages.length;i++)
-              {                  
-                if(isNaN(input[i])){
-                continue;
-                 }
-                  total += Number(input[i]);
-               }
-             return total;
-			 document.getElementById("jamiepagesread").innerHTML = "Pages read: " + total + "<br>" ;
+	var total=0;
+	for(var numpages in booksdata) 
+	{ 
+		total += booksdata[i]; 
+		console.log(total);
 	}
 	
 	for (i = 0 ; i <name.length; i++) {
