@@ -27,6 +27,7 @@ h4{
 div {
 	font-family: arial;
 	color: white;
+	border: solid black 2px;
 }
 
 .footer {
