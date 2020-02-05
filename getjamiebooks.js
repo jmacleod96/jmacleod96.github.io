@@ -11,19 +11,10 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 
 	var numpages = booksdata.getElementsByTagName('num_pages');
-	function sumArray(numpages) {
-	for (
-    var
-      pages = 0,              // The iterator
-      length = numpages.length,  // Cache the array length
-      sum = 0;                // The total amount
-      pages < length;         // The "for"-loop condition
-      sum += numpages[index++]   // Add number on each iteration
-	);
-		return sum;
-		var pagesread = sum;
-		document.getElementById("jamiepagesread").innerHTML = pagesread;
-}
+	for (var i = 0, sum = 0; i < numpages.length; sum += array[i++]);
+	document.getElementById("annapagesread").innerHTML = sum;
+	
+	
 	
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
