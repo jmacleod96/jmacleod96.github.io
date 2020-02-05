@@ -10,14 +10,19 @@ $("document").ready(function() {
 	document.getElementById("jamiebooksread").innerHTML = "Books read: " + name1 + "<br>";
 	var name = booksdata.getElementsByTagName('title');
 
-	
 	var numpages = booksdata.getElementsByTagName('num_pages');
-	var total=0;
-	for(var numpages in booksdata) 
-	{ 
-		total += booksdata[numpages]; 
-		document.getElementById("jamiepagesread").innerHTML = total;
-	}
+	function sumArray(numpages) {
+	for (
+    var
+      pages = 0,              // The iterator
+      length = numpages.length,  // Cache the array length
+      sum = 0;                // The total amount
+      pages < length;         // The "for"-loop condition
+      sum += numpages[index++]   // Add number on each iteration
+	);
+		return sum;
+		console.log(sum)
+}
 	
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
