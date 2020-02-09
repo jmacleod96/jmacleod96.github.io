@@ -11,8 +11,8 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 
 	var numpages = booksdata.getElementsByTagName('num_pages');
-	for (var i = 0, sum = 0; i < numpages.length; sum += numpages[i++]);
-	document.getElementById("jamiepagesread").innerHTML = sum;
+	sum = 0;
+	$.each(numpages,function(){sum+=parseFloat(this) || 0; });
 	console.log(sum);
 	
 	
