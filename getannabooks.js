@@ -10,11 +10,11 @@ $("document").ready(function() {
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 	
 	var numpages = booksdata.getElementsByTagName('num_pages');
-	for (i = 0 ; i <numpages.length; i++) {
-	txt += numpages[i].childNodes[0].nodeValue + "<br>";
-	document.getElementById("annapagesread").innerHTML = txt;
-	}
-	
+    // Getting sum of numbers
+    var sum = numpages.reduce(function(a, b){
+        return a + b;
+    }, 0);
+    console.log(sum); 
 	
 	var name = booksdata.getElementsByTagName('title');
 	
