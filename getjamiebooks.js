@@ -12,9 +12,8 @@ $("document").ready(function() {
 
 	var numpages = booksdata.getElementsByTagName('num_pages');
 	sum = 0;
-	$.each(numpages,function(){sum+=parseFloat(this) || 0; }
-	console.log(sum));
-	
+	total = $.each(numpages,function(){sum+=parseFloat(this) || 0; });
+	console.log(total);
 	
 	
 	
