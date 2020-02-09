@@ -11,9 +11,8 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 
 	var numpages = booksdata.getElementsByTagName('num_pages');
-	sum = 0;
-	total = $.each(numpages,function(){sum+=parseFloat(this) || 0; });
-	console.log(total);
+	console.log(numpages)
+	
 	
 	
 	
