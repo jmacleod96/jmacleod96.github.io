@@ -16,7 +16,7 @@ $("document").ready(function() {
                 sum = sum + value;
             });
 
-            consolge.log(sum);
+            console.log(sum);
 	
 	var name = booksdata.getElementsByTagName('title');
 	
