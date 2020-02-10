@@ -10,7 +10,7 @@ $("document").ready(function() {
 	document.getElementById("jamiebooksread").innerHTML = "Books read: " + name1 + "<br>";
 	var name = booksdata.getElementsByTagName('title');
 
-	var numpages = booksdata.getElementsByTagName('num_pages');
+
 	var arr = [];
 	var totalPrice = 0;
 	var i;
@@ -21,7 +21,8 @@ $("document").ready(function() {
 
 		var price = $(this).text();
 		totalPrice += Number(price);
-		document.getElementById("jamiepagesread").innerHTML = "Sum is "+totalPrice+ ".";
+		document.getElementById("jamiepagesread").innerHTML = "Sum is "+ totalPrice + ".";
+		console.log(totalPrice);
 	});
 		
 	
