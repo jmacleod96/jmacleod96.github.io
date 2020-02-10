@@ -9,19 +9,14 @@ $("document").ready(function() {
 	var name1 = booksdata.getElementsByTagName('title').length;
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 	
-	var arr = [];
-	var totalPrice = 0;
-	var i;
+			var sum = 0;
+            var array = booksdata.getElementsByTagName('num_pages')
 
-	$("book.num_pages").each(function(){
+            $.each(array, function (index, value) {
+                sum = sum + value;
+            });
 
-	arr.push($(this).text());
-
-		var price = $(this).text();
-		totalPrice += Number(price);
-		document.getElementById("annapagesread").innerHTML = "Sum is "+ totalPrice + ".";
-		console.log(totalPrice);
-	});
+            consolge.log(sum);
 	
 	var name = booksdata.getElementsByTagName('title');
 	
