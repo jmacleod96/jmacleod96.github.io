@@ -11,7 +11,7 @@ $("document").ready(function() {
 	var name = booksdata.getElementsByTagName('title');
 
 	var numpages = booksdata.getElementsByTagName('num_pages');
-	var arr = 
+	var arr = [];
 	var totalPrice = 0;
 	var i;
 
