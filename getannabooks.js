@@ -13,7 +13,7 @@ $("document").ready(function() {
 	var totalPrice = 0;
 	var i;
 
-	$("num_pages").each(function(){
+	$("book.num_pages").each(function(){
 
 	arr.push($(this).text());
 
