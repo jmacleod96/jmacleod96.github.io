@@ -10,7 +10,7 @@ $("document").ready(function() {
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 	
 			var sum = 0;
-            var array = booksdata.getElementsByTagName('num_pages');
+            var array = booksdata.getElementsByTagName('num_pages').innerHTML;
 			console.log(array);
             $.each(array, function (index, value) {
                 sum = sum + value;
