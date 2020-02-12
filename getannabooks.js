@@ -11,7 +11,7 @@ $("document").ready(function() {
 	
 			var sum = 0;
             var array = booksdata.getElementsByTagName('num_pages');
-
+			console.log(array);
             $.each(array, function (index, value) {
                 sum = sum + value;
             });
