@@ -18,8 +18,7 @@ $("document").ready(function() {
 	},
 	error: function(data) {
 	console.log('Error loading XML data');
-	}
-	
+	};
 	
 	
 	
