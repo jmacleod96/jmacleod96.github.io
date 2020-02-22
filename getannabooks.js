@@ -9,13 +9,26 @@ $("document").ready(function() {
 	var name1 = booksdata.getElementsByTagName('title').length;
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 	
-			var sum = 0;
+	
+	for (i = 0 ; i <num_pages.length; i++) {
+        txt += num_pages[i].childNodes[0].nodeValue + "<br>";
+    }
+	document.getElementById("annapagesread").innerHTML = txt;
+	},
+	error: function(data) {
+	console.log('Error loading XML data');
+	}
+	
+	
+	
+	
+			/*var sum = 0;
             var array = booksdata.getElementsByTagName('num_pages').innerHTML;
 			console.log(array);
             $.each(array, function (index, value) {
                 sum = sum + value;
 				console.log(sum);
-            });
+            });*/
 
             
 	
