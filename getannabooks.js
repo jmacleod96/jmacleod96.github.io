@@ -14,9 +14,10 @@ $("document").ready(function() {
 			console.log(array);
             $.each(array, function (index, value) {
                 sum = sum + value;
+				console.log(sum);
             });
 
-            console.log(sum);
+            
 	
 	var name = booksdata.getElementsByTagName('title');
 	
