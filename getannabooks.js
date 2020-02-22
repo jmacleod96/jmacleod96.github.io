@@ -15,10 +15,7 @@ $("document").ready(function() {
         txt += num_pages[i].childNodes[0].nodeValue + "<br>";
     }
 	document.getElementById("annapagesread").innerHTML = txt;
-	},
-	error: function(data) {
-	console.log('Error loading XML data');
-	};
+	}
 	
 	
 	
