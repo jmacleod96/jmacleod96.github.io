@@ -9,23 +9,7 @@ $("document").ready(function() {
 	var name1 = booksdata.getElementsByTagName('title').length;
 	document.getElementById("jamiebooksread").innerHTML = "Books read: " + name1 + "<br>";
 	var name = booksdata.getElementsByTagName('title');
-
-
-	var arr = [];
-	var totalPrice = 0;
-	var i;
-
-	$("num_pages").each(function(){
-
-	arr.push($(this).text());
-
-		var price = $(this).text();
-		totalPrice += Number(price);
-		document.getElementById("jamiepagesread").innerHTML = "Sum is "+ totalPrice + ".";
-		console.log(totalPrice);
-	});
 		
-	
 	
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
