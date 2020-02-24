@@ -19,7 +19,7 @@ $("document").ready(function() {
 	
 	error: function(data) {
 	console.log('Error loading XML data');
-	}
+	};
 	
 	var pages = booksdata.getElementsByTagName('num_pages');
 	for (i = 0 ; i <pages.length; i++) {
