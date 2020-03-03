@@ -9,17 +9,16 @@ $("document").ready(function() {
 	var name1 = booksdata.getElementsByTagName('title').length;
 	document.getElementById("jamiebooksread").innerHTML = "Books read: " + name1 + "<br>";
 	
-	
-	var pages = booksdata.getElementsByTagName('num_pages');
-	for (i = 0 ; i <pages.length; i++) {
-        txt += pages[i].childNodes[0].nodeValue + "<br>";
+	var name = booksdata.getElementsByTagName('title');
+	for (i = 0 ; i <name.length; i++) {
+        txt += name[i].childNodes[0].nodeValue + "<br>";
     }
-	document.getElementById("jamiepagesread").innerHTML = txt;
+	document.getElementById("jamiebookshere").innerHTML = txt;
 	console.log(booksdata);
 	},
 	
 	error: function(data) {
 	console.log('Error loading XML data');
-	}
+	};
  })
 })
