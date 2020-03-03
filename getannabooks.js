@@ -11,7 +11,7 @@ $("document").ready(function() {
 
     var numpages = booksdata.getElementsByTagName('num_pages');
 	for (var i = 0; i < numpages.length; i++) {
-           console.log(numpages[i].attributes[0].nodeValue); //second console output
+           console.log(numpages[i].attributes[0]); //second console output
        }
 	
 	var name = booksdata.getElementsByTagName('title');
