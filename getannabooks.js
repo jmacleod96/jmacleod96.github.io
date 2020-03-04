@@ -14,7 +14,7 @@ $("document").ready(function() {
 	for (let i = 0; i < numpages.length; i++) { 
             num += numpages[i];
 			
-			console.log(Object.values(num)); 
+			console.log(Object.values(numpages)); 
         } 
 	
 	
