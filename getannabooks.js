@@ -10,8 +10,11 @@ $("document").ready(function() {
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 
     var numpages = booksdata.getElementsByTagName('num_pages');
-	
- console.log(numpages)
+	var sum=0;
+for(var i=0;i<BooksaData.length;i++){
+   sum+=BooksData[i]["num_pages"];
+   console.log(sum);
+}
 	
 	
 
