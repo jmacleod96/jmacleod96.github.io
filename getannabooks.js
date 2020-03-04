@@ -12,7 +12,7 @@ $("document").ready(function() {
     var numpages = booksdata.getElementsByTagName('num_pages');
 	var sum=0;
 for(var i=0;i<booksdata.length;i++){
-   sum+=BooksData[i]["num_pages"];
+   sum+=booksdata[i]["num_pages"];
    
 }
 	console.log(sum);
