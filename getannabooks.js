@@ -12,7 +12,7 @@ $("document").ready(function() {
     var numpages = booksdata.getElementsByTagName('num_pages');
 	var num = 0;
 	for (let i = 0; i < numpages.length; i++) { 
-            num += myArray[i];
+            num += numpages[i];
 			console.log(num);
 			console.log(numpages[i]); 
         } 
