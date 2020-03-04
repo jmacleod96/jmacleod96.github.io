@@ -10,9 +10,10 @@ $("document").ready(function() {
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 
     var numpages = booksdata.getElementsByTagName('num_pages');
-	for (var i = 0; i < numpages.length; i++) {
-           console.log(numpages); 
-       }
+	l = numpages.length;
+	for (i = 0; i < l; i++) {
+		document.write(numpages[i].tagName + "<br>");
+}
 	
 	var name = booksdata.getElementsByTagName('title');
 	for (i = 0 ; i <name.length; i++) {
