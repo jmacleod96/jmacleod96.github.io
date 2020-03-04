@@ -10,11 +10,20 @@ $("document").ready(function() {
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 
     var numpages = booksdata.getElementsByTagName('num_pages');
+	var num = 0;
 	for (let i = 0; i < numpages.length; i++) { 
-            console.log(numpages[i]); 
+            num += myArray[i];
+			console.log(num);
+			console.log(numpages[i]); 
         } 
 	
 	
+	
+	
+	
+	var s = 0;
+for(var i=0; i<myArray.length; i++)
+    s += myArray[i];
 	
 	
 	
