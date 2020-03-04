@@ -13,9 +13,9 @@ $("document").ready(function() {
 	var sum=0;
 for(var i=0;i<booksdata.length;i++){
    sum+=booksdata[i]["num_pages"];
-   console.log(sum);
+   document.getElementById("annapagesread").innerHTML = sum;
 }
-	
+
 	
 
 	
