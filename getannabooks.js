@@ -13,8 +13,8 @@ $("document").ready(function() {
 	var num = 0;
 	for (let i = 0; i < numpages.length; i++) { 
             num += numpages[i];
-			console.log(num);
 			
+			console.log(Object.values(num)); 
         } 
 	
 	
