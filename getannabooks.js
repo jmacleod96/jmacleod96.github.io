@@ -11,11 +11,11 @@ $("document").ready(function() {
 
     var numpages = booksdata.getElementsByTagName('num_pages');
 	var num = 0;
-	for (let i = 0; i < numpages.length; i++) { 
-            num += numpages[i];
-			
-			console.log(numpages[i]); 
-        } 
+	 
+ $.each(booksdata, function(index, value) {
+   num += booksdata.num_pages;
+ })
+ console.log(num)
 	
 	
 
