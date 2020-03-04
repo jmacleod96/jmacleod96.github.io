@@ -19,14 +19,6 @@ $("document").ready(function() {
 	
 	
 	
-	
-	
-	var s = 0;
-for(var i=0; i<myArray.length; i++)
-    s += myArray[i];
-	
-	
-	
 	var name = booksdata.getElementsByTagName('title');
 	for (i = 0 ; i <name.length; i++) {
         txt += name[i].childNodes[0].nodeValue + "<br>";
