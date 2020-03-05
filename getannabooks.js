@@ -10,7 +10,7 @@ $("document").ready(function() {
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
 
     var numpages = booksdata.getElementsByTagName('num_pages');
-	console.log(numpages[i]); 
+	console.log(numpages[0]); 
 	
 	
 	
