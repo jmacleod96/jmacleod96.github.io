@@ -10,7 +10,7 @@ $("document").ready(function() {
 	
 	var numpages = booksdata.getElementsByTagName('num_pages')[i].innerHTML;
 	for (i = 0 ; i <numpages.length; i++) {
-        txt += numpages[i].childNodes[0].nodeValue + "<br>";
+        txt += numpages + "<br>";
     }
 	document.getElementById("annapageshere").innerHTML = txt;
 	console.log(numpages);
