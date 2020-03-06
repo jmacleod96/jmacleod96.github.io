@@ -8,12 +8,6 @@ $("document").ready(function() {
 	var booksdata = data;
 	var name1 = booksdata.getElementsByTagName('title').length;
 	document.getElementById("annabooksread").innerHTML = "Books read: " + name1 + "<br>" ;
-
-    var numpages = booksdata.getElementsByTagName('num_pages');
-	console.log(numpages[0]); 
-	
-	
-	
 	
 	var name = booksdata.getElementsByTagName('title');
 	for (i = 0 ; i <name.length; i++) {
