@@ -8,7 +8,7 @@ $("document").ready(function() {
 	var booksdata = data;
 		
 	
-	var numpages = booksdata.getElementsByTagName('num_pages');
+	var numpages = booksdata.getElementsByTagName('num_pages')[i].innerHTML;
 	for (i = 0 ; i <numpages.length; i++) {
         txt += numpages[i].childNodes[0].nodeValue + "<br>";
     }
