@@ -8,15 +8,9 @@ $("document").ready(function() {
 	var booksdata = data;
 		
 	
-	var numpages = booksdata.getElementsByTagName('num_pages')[i].innerHTML;
-	for (i = 0 ; i <numpages.length; i++) {
-        txt += numpages + "<br>";
-    }
-	document.getElementById("annapageshere").innerHTML = txt;
+	var numpages = booksdata.getElementsByTagName('num_pages').length;
 	console.log(numpages);
-	},
-	error: function(data) {
-	console.log('Error loading XML data');
-	}
+	
+	
  })
 })
