@@ -6,11 +6,24 @@ $("document").ready(function() {
 	success: function(data) {
 	var txt = "";
 	var booksdata = data;
-		
 	
-	var numpages = booksdata.getElementsByTagName('num_pages').length;
-	console.log(numpages);
+	// var lol = booksdata.getElementsByTagName('num_pages');
+	// console.log(lol);
 	
+	// var name = booksdata.getElementsByTagName('num_pages');
+	// for (i = 0 ; i <name.length; i++) {
+        // txt += name[i].childNodes[0].textContent + "<br>";
+    // }
+	var name = booksdata.getElementsByTagName('num_pages');
+	for (i = 0 ; i <name.length; i++) {
+        txt += name[i].childNodes[0].text + "<br>";
+    }
+	document.getElementById("annapagesread").innerHTML = txt;
+	console.log(txt);
+	},
 	
- 
+	error: function(data) {
+	console.log('Error loading XML data');
+	}
+ })
 })
